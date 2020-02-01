@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        
+    </head>
+    <body>
+        {{>header}}
+        <h2>{{ name }}</h2>
+        <p>Check your local weather here!!!</p>
+        <form action="" class="form">
+            <input type="text" class="address">
+            <input type="submit" value="Check It!!" placeholder="address">
+        </form> 
+        <div class="showInfo">
+            Enter a valid address to find out the current weather
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/app.js"></script>
+    </body>
+</html>
