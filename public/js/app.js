@@ -36,7 +36,8 @@ form.addEventListener('submit', (e) => {
 
         const message = `<p>Address: ${data.address}</p>
         <p>Forecast: ${data.forecast}</p>
-        <p>Location: ${data.location}</p>`;
+        <p>Location: ${data.location}</p>
+        <p>Temperature: ${data.temperature}</p>`;
 
         showInfoDisplay.innerHTML = message;
     });

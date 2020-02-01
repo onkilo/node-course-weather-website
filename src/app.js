@@ -60,7 +60,7 @@ app.get('/weather', (req, res) => {
                 error: err
             });
         }else{
-            forecast(longitud, latitud, ( fError, {summary} = {}) => {
+            forecast(longitud, latitud, ( fError, {summary, temperature} = {}) => {
                 
                 if(fError){
                     return res.send({
@@ -71,7 +71,8 @@ app.get('/weather', (req, res) => {
                     res.send({
                         forecast: summary,
                         location: location,
-                        address: req.query.address
+                        address: req.query.address,
+                        temperature
                     });
                 }
                 
