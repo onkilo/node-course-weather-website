@@ -1,7 +1,7 @@
 console.log('works');
 
 const APICall = (address = '', callback) => {
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
     .then((response) => {
         return response.json()
     })
